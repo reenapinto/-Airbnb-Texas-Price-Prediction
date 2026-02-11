@@ -57,8 +57,8 @@ XGBoost significantly outperforms the baseline.
 - Investors should prioritize entire-home inventory in high-demand areas
   
 ## Author
-Reena Pinto
-Aspiring Data Scientist
+Reena Pinto, 
+Data Scientist
 
 
 
