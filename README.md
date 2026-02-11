@@ -2,12 +2,12 @@
 End-to-end data science project analyzing Airbnb listings in Texas and building machine learning models to predict nightly prices using Python, EDA, feature engineering, and XGBoost.
 
 
-🏡 Airbnb Texas Price Prediction
-📌 Project Overview
+## 🏡 Airbnb Texas Price Prediction
+### 📌 Project Overview
 
 This project analyzes Airbnb listings in Texas to understand pricing drivers and build machine learning models to predict nightly rental prices. The goal is to provide insights for hosts on optimal pricing strategies and identify the most influential listing attributes.
 
-🎯 Objectives
+### 🎯 Objectives
 
 Explore Airbnb listing characteristics
 
@@ -17,7 +17,7 @@ Build predictive models
 
 Compare baseline vs advanced models
 
-📊 Datasets Used
+### 📊 Datasets Used
 
 Listings
 
@@ -29,7 +29,7 @@ Neighborhood metadata
 
 All datasets were cleaned and stored as Parquet files for efficient processing.
 
-🧹 Data Cleaning Summary
+### 🧹 Data Cleaning Summary
 
 Converted dates to datetime
 
@@ -43,7 +43,7 @@ Capped unrealistic minimum and maximum nights
 
 Removed columns with 100% missing values
 
-📈 Exploratory Data Analysis
+### 📈 Exploratory Data Analysis
 
 Key analyses include:
 
@@ -59,7 +59,7 @@ Reviews vs price
 
 Example:
 
-🤖 Modeling Approach
+### 🤖 Modeling Approach
 
 Baseline Model
 
@@ -73,7 +73,7 @@ R² ≈ 0.61
 
 XGBoost significantly improved performance.
 
-🔍 Top Predictive Features (XGBoost)
+### 🔍 Top Predictive Features (XGBoost)
 
 Room Type (Private room, Hotel room, Shared room)
 
@@ -87,7 +87,7 @@ Latitude & Longitude
 
 Availability_365
 
-💡 Key Insights
+### 💡 Key Insights
 
 Room type is the strongest driver of price
 
@@ -97,7 +97,7 @@ More active listings (higher reviews per month) charge higher prices
 
 Location strongly influences price
 
-📌 Business Recommendations
+### 📌 Business Recommendations
 
 Hosts should optimize minimum night policies
 
@@ -107,7 +107,7 @@ Price strategically based on room type
 
 Adjust pricing by neighborhood
 
-🛠 Tech Stack
+### 🛠 Tech Stack
 
 Python
 
@@ -119,11 +119,11 @@ Scikit-learn
 
 XGBoost
 
-▶ How to Run
+### ▶ How to Run
 pip install -r requirements.txt
 jupyter notebook notebooks/airbnb-texas.ipynb
 
-📌 Author
+### 📌 Author
 
 Reena Pinto
 Aspiring Data Scientist
