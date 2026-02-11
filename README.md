@@ -43,7 +43,7 @@ XGBoost significantly outperforms the baseline.
 ![Price Distribution](images/price_distribution.png)
 
 ### Feature Importance (XGBoost)
-![Feature Importance](images/feature_importance_xgboost.png)
+![Feature Importance](images/feature_importance.png)
 
 ## Business Insights
 - Entire homes command large price premiums  
