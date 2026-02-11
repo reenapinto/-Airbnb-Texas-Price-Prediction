@@ -60,3 +60,7 @@ XGBoost significantly outperforms the baseline.
 ```bash
 pip install -r requirements.txt
 jupyter notebook notebooks/airbnb-texas.ipynb
+
+## Author
+Reena Pinto
+Aspiring Data Scientist
