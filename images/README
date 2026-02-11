@@ -1,1 +1,8 @@
+## Key Results
+
+- XGBoost achieved R² = 0.61 vs Linear Regression R² = 0.24
+- Room type is the strongest predictor of nightly price
+- Entire homes and private rooms command significantly higher prices
+- Location (latitude/longitude) meaningfully impacts pricing
+- Minimum nights and host portfolio size influence price
 
