@@ -1,127 +1,62 @@
 # Airbnb Texas Price Prediction
-End-to-end data science project analyzing Airbnb listings in Texas and building machine learning models to predict nightly prices using Python, EDA, feature engineering, and XGBoost.
 
-### 📌 Project Overview
+End-to-end data science project analyzing Airbnb listings in Texas and building machine learning models to predict nightly prices.
 
-This project analyzes Airbnb listings in Texas to understand pricing drivers and build machine learning models to predict nightly rental prices. The goal is to provide insights for hosts on optimal pricing strategies and identify the most influential listing attributes.
+## Objective
+Build a predictive model that estimates Airbnb nightly price using listing characteristics, host behavior, reviews, and availability data.
 
-### 🎯 Objectives
+## Dataset
+- ~10k listings  
+- ~3.8M calendar records  
+- ~580k reviews  
+- Geospatial neighborhood boundaries  
 
-Explore Airbnb listing characteristics
+## Project Workflow
+1. Data Cleaning & Validation  
+2. Exploratory Data Analysis (EDA)  
+3. Feature Engineering  
+4. Baseline Modeling (Linear Regression)  
+5. Advanced Modeling (XGBoost)  
+6. Model Evaluation  
+7. Business Insights
 
-Identify key factors influencing price
+## Models
 
-Build predictive models
+| Model | RMSE | R² |
+|-----|-----|----|
+| Linear Regression | 0.44 | 0.24 |
+| XGBoost | 0.23 | 0.61 |
 
-Compare baseline vs advanced models
+XGBoost significantly outperforms the baseline.
 
-### 📊 Datasets Used
+## Key Features Driving Price
+- Room Type  
+- Minimum Nights  
+- Reviews Per Month  
+- Host Listing Count  
+- Latitude & Longitude  
+- Availability
 
-Listings
+## Sample Visuals
 
-Calendar availability
+### Price Distribution
+![Price Distribution](images/price_distribution.png)
 
-Reviews
+### Feature Importance (XGBoost)
+![Feature Importance](images/feature_importance_xgboost.png)
 
-Neighborhood metadata
+## Business Insights
+- Entire homes command large price premiums  
+- High minimum-night requirements increase price  
+- High-review velocity correlates with stronger demand  
+- Location remains a major driver of value  
 
-All datasets were cleaned and stored as Parquet files for efficient processing.
+## Recommendations
+- Hosts can optimize price by reducing minimum-night friction  
+- New hosts should focus on early reviews  
+- Investors should prioritize entire-home inventory in high-demand areas
 
-### 🧹 Data Cleaning Summary
-
-Converted dates to datetime
-
-Cleaned price fields and removed extreme outliers
-
-Filled missing numerical values using medians
-
-Encoded categorical variables
-
-Capped unrealistic minimum and maximum nights
-
-Removed columns with 100% missing values
-
-### 📈 Exploratory Data Analysis
-
-Key analyses include:
-
-Price distribution
-
-Price by room type
-
-Correlation heatmap
-
-Availability vs price
-
-Reviews vs price
-
-Example:
-
-### 🤖 Modeling Approach
-
-Baseline Model
-
-Linear Regression
-R² ≈ 0.24
-
-Advanced Model
-
-XGBoost Regressor
-R² ≈ 0.61
-
-XGBoost significantly improved performance.
-
-### 🔍 Top Predictive Features (XGBoost)
-
-Room Type (Private room, Hotel room, Shared room)
-
-Minimum nights
-
-Reviews per month
-
-Host listing count
-
-Latitude & Longitude
-
-Availability_365
-
-### 💡 Key Insights
-
-Room type is the strongest driver of price
-
-Listings requiring longer minimum stays tend to be more expensive
-
-More active listings (higher reviews per month) charge higher prices
-
-Location strongly influences price
-
-### 📌 Business Recommendations
-
-Hosts should optimize minimum night policies
-
-Invest in amenities and guest experience
-
-Price strategically based on room type
-
-Adjust pricing by neighborhood
-
-### 🛠 Tech Stack
-
-Python
-
-Pandas, NumPy
-
-Matplotlib, Seaborn
-
-Scikit-learn
-
-XGBoost
-
-### ▶ How to Run
+## How to Run
+```bash
 pip install -r requirements.txt
 jupyter notebook notebooks/airbnb-texas.ipynb
-
-### 📌 Author
-
-Reena Pinto
-Aspiring Data Scientist
