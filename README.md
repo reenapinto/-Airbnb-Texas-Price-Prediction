@@ -55,12 +55,16 @@ XGBoost significantly outperforms the baseline.
 - Hosts can optimize price by reducing minimum-night friction  
 - New hosts should focus on early reviews  
 - Investors should prioritize entire-home inventory in high-demand areas
+  
+## Author
+Reena Pinto
+Aspiring Data Scientist
 
 ## How to Run
 ```bash
 pip install -r requirements.txt
 jupyter notebook notebooks/airbnb-texas.ipynb
 
-## Author
-Reena Pinto
-Aspiring Data Scientist
+
+
+
